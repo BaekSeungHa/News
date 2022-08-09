@@ -46,11 +46,13 @@ const NewsList = ({ category }) => {
   }
 
   return (
-    <NewsListBlock>
-      {articles.map((article) => (
-        <NewsItem key={article.url} article={article} />
-      ))}
-    </NewsListBlock>
+    <>
+      <NewsListBlock>
+        {articles.map((article) => (
+          <NewsItem key={article.url} article={article} />
+        ))}
+      </NewsListBlock>
+    </>
   );
 };
 
